@@ -104,7 +104,7 @@ gem 'sidekiq'
 gem 'sidekiq-statistic'
 
 # for sidekiq web
-gem 'sinatra', require: false
+gem 'sinatra', '>= 2.2.0', require: false
 gem 'execjs', require: false
 gem 'mini_racer'
 gem 'thin', require: false
