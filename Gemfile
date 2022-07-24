@@ -8,9 +8,9 @@ end
 
 if rails_master?
   gem 'arel', git: 'https://github.com/rails/arel.git'
-  gem 'rails', git: 'https://github.com/rails/rails.git'
+  gem 'rails', '>= 4.2.7', git: 'https://github.com/rails/rails.git'
   gem 'rails-observers', git: 'https://github.com/rails/rails-observers.git'
-  gem 'seed-fu', git: 'https://github.com/SamSaffron/seed-fu.git', branch: 'discourse'
+  gem 'seed-fu', '>= 2.3.5', git: 'https://github.com/SamSaffron/seed-fu.git', branch: 'discourse'
 else
   # Rails 5 is going to ship with Action Cable, we have no use for it as
   # we already ship MessageBus, AC introduces dependencies on Event Machine,
@@ -28,7 +28,7 @@ else
   # gem 'activejob'
   # gem 'railties'
   # gem 'sprockets-rails'
-  gem 'rails', '~> 4.2'
+  gem 'rails', '~> 4.2', '>= 4.2.7'
 
   gem 'rails-observers'
   gem 'seed-fu', '~> 2.3.5'
