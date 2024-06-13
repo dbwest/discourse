@@ -175,9 +175,8 @@ GEM
     multipart-post (2.0.0)
     mustache (1.0.3)
     netrc (0.11.0)
-    nokogiri (1.6.8)
+    nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
     nokogumbo (1.4.7)
       nokogiri
     oauth (0.4.7)
@@ -226,7 +225,6 @@ GEM
       redis
       ruby-openid
     pg (0.18.4)
-    pkg-config (1.1.7)
     progress (3.1.1)
     pry (0.10.3)
       coderay (~> 1.1.0)
@@ -324,7 +322,7 @@ GEM
     rspec-support (3.4.1)
     rtlit (0.0.5)
     ruby-openid (2.7.0)
-    ruby-readability (0.7.0)
+    ruby-readability (0.7.1)
       guess_html_encoding (>= 0.0.4)
       nokogiri (>= 1.6.0)
     sanitize (4.0.1)
@@ -483,7 +481,7 @@ DEPENDENCIES
   rspec-html-matchers
   rspec-rails
   rtlit
-  ruby-readability
+  ruby-readability (>= 0.7.1)
   sanitize
   sass
   sass-rails
@@ -503,4 +501,4 @@ DEPENDENCIES
   unicorn
 
 BUNDLED WITH
-   1.12.5
+   1.17.3
