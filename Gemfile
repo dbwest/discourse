@@ -8,7 +8,7 @@ end
 
 if rails_master?
   gem 'arel', git: 'https://github.com/rails/arel.git'
-  gem 'rails', git: 'https://github.com/rails/rails.git'
+  gem 'rails', '>= 7.0.0', git: 'https://github.com/rails/rails.git'
   gem 'rails-observers', git: 'https://github.com/rails/rails-observers.git'
   gem 'seed-fu', git: 'https://github.com/SamSaffron/seed-fu.git', branch: 'discourse'
 else
@@ -28,7 +28,7 @@ else
   # gem 'activejob'
   # gem 'railties'
   # gem 'sprockets-rails'
-  gem 'rails', '~> 4.2'
+  gem 'rails', '~> 7.0', '>= 7.0.0'
 
   gem 'rails-observers'
   gem 'seed-fu', '~> 2.3.5'
@@ -99,17 +99,17 @@ gem 'rest-client'
 gem 'rinku'
 gem 'sanitize'
 gem 'sass'
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 gem 'sidekiq'
 gem 'sidekiq-statistic'
 
 # for sidekiq web
-gem 'sinatra', require: false
+gem 'sinatra', '>= 4.0.0', require: false
 gem 'execjs', require: false
 gem 'mini_racer'
 gem 'thin', require: false
 gem 'highline', require: false
-gem 'rack-protection' # security
+gem 'rack-protection' , '>= 4.0.0' # security
 
 # Gems used only for assets and not required
 # in production environments by default.
