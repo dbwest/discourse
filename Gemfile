@@ -8,7 +8,7 @@ end
 
 if rails_master?
   gem 'arel', git: 'https://github.com/rails/arel.git'
-  gem 'rails', git: 'https://github.com/rails/rails.git'
+  gem 'rails', '>= 4.2.7.1', git: 'https://github.com/rails/rails.git'
   gem 'rails-observers', git: 'https://github.com/rails/rails-observers.git'
   gem 'seed-fu', git: 'https://github.com/SamSaffron/seed-fu.git', branch: 'discourse'
 else
@@ -28,7 +28,7 @@ else
   # gem 'activejob'
   # gem 'railties'
   # gem 'sprockets-rails'
-  gem 'rails', '~> 4.2'
+  gem 'rails', '~> 4.2', '>= 4.2.7.1'
 
   gem 'rails-observers'
   gem 'seed-fu', '~> 2.3.5'
@@ -43,11 +43,11 @@ gem 'redis-namespace'
 
 gem 'active_model_serializers', '~> 0.8.3'
 
-gem 'onebox'
+gem 'onebox', '>= 1.8.3'
 
 gem 'http_accept_language', '~>2.0.5', require: false
 
-gem 'ember-rails', '0.18.5'
+gem 'ember-rails', '0.19.0'
 gem 'ember-source', '1.12.2'
 gem 'barber'
 gem 'babel-transpiler'
@@ -74,7 +74,7 @@ gem 'email_reply_trimmer', '0.1.3'
 gem 'image_optim', '0.20.2'
 gem 'multi_json'
 gem 'mustache'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.18.9'
 gem 'omniauth'
 gem 'omniauth-openid'
 gem 'openid-redis-store'
@@ -97,9 +97,9 @@ gem 'rake'
 
 gem 'rest-client'
 gem 'rinku'
-gem 'sanitize'
+gem 'sanitize', '>= 4.1.0'
 gem 'sass'
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.5'
 gem 'sidekiq'
 gem 'sidekiq-statistic'
 
@@ -131,16 +131,16 @@ group :test, :development do
   gem 'certified', require: false
   # later appears to break Fabricate(:topic, category: category)
   gem 'fabrication', '2.9.8', require: false
-  gem 'discourse-qunit-rails', require: 'qunit-rails'
+  gem 'discourse-qunit-rails', '>= 0.0.11', require: 'qunit-rails'
   gem 'mocha', require: false
   gem 'rb-fsevent', require: RUBY_PLATFORM =~ /darwin/i ? 'rb-fsevent' : false
   gem 'rb-inotify', '~> 0.9', require: RUBY_PLATFORM =~ /linux/i ? 'rb-inotify' : false
-  gem 'rspec-rails', require: false
+  gem 'rspec-rails', '>= 3.5.0', require: false
   gem 'shoulda', require: false
   gem 'simplecov', require: false
   gem 'timecop'
   gem 'rspec-given'
-  gem 'rspec-html-matchers'
+  gem 'rspec-html-matchers', '>= 0.7.1'
   gem 'spork-rails'
   gem 'pry-nav'
   gem 'byebug', require: ENV['RM_INFO'].nil?
@@ -152,7 +152,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'librarian', '>= 0.0.25', require: false
   gem 'annotate'
-  gem 'foreman', require: false
+  gem 'foreman', '>= 0.86.0', require: false
 end
 
 # this is an optional gem, it provides a high performance replacement
@@ -179,7 +179,7 @@ gem 'rbtrace', require: false, platform: :mri
 
 # required for feed importing and embedding
 #
-gem 'ruby-readability', require: false
+gem 'ruby-readability', '>= 0.7.1', require: false
 
 gem 'simple-rss', require: false
 
